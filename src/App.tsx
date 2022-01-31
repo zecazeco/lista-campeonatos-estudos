@@ -2,7 +2,7 @@ import React from 'react';
 
 import CompetitionsList from './pages/CompetitionsList';
 
-const App = () => {
+function App() {
   return (
     <CompetitionsList />
   );

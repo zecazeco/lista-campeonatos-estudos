@@ -1,12 +1,14 @@
-import { Match } from "../../components";
+import React from 'react';
 
-const MatchesList = () => {
+import { Match } from '../../components';
+
+function MatchesList() {
   return (
     <>
       <Match />
       <Match />
     </>
   );
-};
+}
 
 export default MatchesList;
