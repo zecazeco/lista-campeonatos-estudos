@@ -1,8 +1,10 @@
 import React from 'react';
 
+import CompetitionsList from './pages/CompetitionsList';
+
 const App = () => {
   return (
-    <h1>Hello</h1>
+    <CompetitionsList />
   );
 }
 
