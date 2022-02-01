@@ -5,31 +5,24 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import { ICompetition } from '../../interfaces/competition';
-// const Competition = ({name}:ICompetition) => {
-// const Competition = (props:ICompetition) => {
-// const Competition: React.FC<ICompetition> = ({ children, name }) => {
+import { ITeam } from '../../interfaces/team';
 
-function Competition({ name, description, country }: ICompetition) {
+function Team({ name, city }: ITeam) {
   return (
     <Card sx={{ minWidth: 345 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          {country}
+          {city}
         </Typography>
         <Typography variant="h5" component="div">
           {name}
         </Typography>
-        <Typography variant="body2">
-          {description}
-        </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Participantes</Button>
-        <Button size="small">Jogos</Button>
+        <Button size="small">Jogadores</Button>
       </CardActions>
     </Card>
   );
 }
 
-export default Competition;
+export default Team;
