@@ -1,5 +1,4 @@
 import React from 'react';
-
 import CompetitionsList from './pages/CompetitionsList';
 
 function App() {
