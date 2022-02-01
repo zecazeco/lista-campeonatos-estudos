@@ -1,6 +1,6 @@
-import React from 'react';
-
 export interface IMatch {
-  name: string;
-  children: React.ReactNode;
+  home: string;
+  away: string;
+  date: string;
+  competition: string;
 }

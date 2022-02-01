@@ -10,24 +10,22 @@ import { ICompetition } from '../../interfaces/competition';
 // const Competition = (props:ICompetition) => {
 // const Competition: React.FC<ICompetition> = ({ children, name }) => {
 
-function Competition({
-  children, name, country,
-}: ICompetition) {
+function Competition({ name, description, country }: ICompetition) {
   return (
     <Card sx={{ minWidth: 345 }}>
       <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          {country}
+        </Typography>
         <Typography variant="h5" component="div">
           {name}
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {country}
-        </Typography>
         <Typography variant="body2">
-          {children}
+          {description}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Ver tabela</Button>
+        <Button size="small">Ver partidas</Button>
       </CardActions>
     </Card>
   );

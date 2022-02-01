@@ -7,10 +7,10 @@ function CompetitionsList() {
   return (
     <div>
       <Stack spacing={2}>
-        <Competition name="comp111" country="Brasil">descricao competiçao 1</Competition>
-        <Competition name="comp222" country="Brasil">descricao competiçao 2</Competition>
-        <Competition name="comp3" country="Brasil">descricao competiçao 3</Competition>
-        <Competition name="comp5" country="Brasil">descricao competiçao 5</Competition>
+        <Competition name="comp1" country="Brasil" description="descricao competiçao 1" />
+        <Competition name="comp2" country="Brasil" description="descricao competiçao 2" />
+        <Competition name="comp3" country="Brasil" description="descricao competiçao 3" />
+        <Competition name="comp4" country="Brasil" description="descricao competiçao 4" />
       </Stack>
     </div>
   );
