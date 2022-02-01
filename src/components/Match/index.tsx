@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
 
 import { IMatch } from '../../interfaces/match';
 
@@ -14,9 +15,17 @@ function Match({
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {date}
         </Typography>
-        <Typography variant="h5" component="div">
-          {home} x {away}
-        </Typography>
+        <Stack direction="row" spacing={2}>
+          <Typography variant="h5" component="div">
+            {home}
+          </Typography>
+          <Typography variant="h5" component="div">
+            X
+          </Typography>
+          <Typography variant="h5" component="div">
+            {away}
+          </Typography>
+        </Stack>
         <Typography variant="body2">
           {competition}
         </Typography>
