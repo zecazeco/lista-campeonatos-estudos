@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Stack from '@mui/material/Stack';
 
 import { Team, TopBar } from '../../components';
+import api from '../../services/api';
+
+import { ITeam } from '../../interfaces/team';
 
 function TeamsList() {
+  const [teams, setTeams] = useState<ITeam[]>([]);
+
+  useEffect(() => {
+    async function getTeamss() {
+      const { data } = await api.get('/teams');
+      // console.log('RESPO', data);
+      setTeams(data);
+    }
+
+    getTeamss();
+  }, []);
+
   return (
     <>
-      <TopBar title="Times" />
+      <TopBar title="Equipes" />
       <Stack spacing={2}>
-        <Team id="0" name="nome 1" city="cidade" />
-        <Team id="1" name="nome 2" city="cidade 2" />
+        {
+          teams.length > 0 && teams.map((item) => (
+            <Team
+              id={item.id}
+              name={item.name}
+              city={item.city}
+            />
+          ))
+        }
       </Stack>
     </>
   );
