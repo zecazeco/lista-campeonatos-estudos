@@ -1,7 +1,7 @@
-# Tabela de confrontos entre times
-Projeto de estudo feito de React com Typescript que lista confrontos de times dentro de campeonatos.
+# Campeonatos, times e confrontos (frontEnd)
+Projeto de estudo feito de React com Typescript que lista campeonatos, seus participantes e os confrontos entre eles.
 
-
+backEnd:
 [API de estudos](https://github.com/zecazeco/node-api-estudos)
 
 ## Author
