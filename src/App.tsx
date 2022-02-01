@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -6,8 +7,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-// import CompetitionsList from './pages/CompetitionsList';
-import MatchesList from './pages/MatchesList';
+import AppRouter from './routes';
 
 function App() {
   return (
@@ -30,7 +30,9 @@ function App() {
           </Toolbar>
         </AppBar>
       </Box>
-      <MatchesList />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </>
   );
 }
