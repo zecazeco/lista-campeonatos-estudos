@@ -26,6 +26,7 @@ function CompetitionsList() {
         {
           competitions.length > 0 && competitions.map((item) => (
             <Competition
+              key={item.id}
               id={item.id}
               name={item.name}
               country={item.country}

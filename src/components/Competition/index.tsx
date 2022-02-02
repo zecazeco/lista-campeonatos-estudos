@@ -4,13 +4,18 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import { Link } from 'react-router-dom';
 import { ICompetition } from '../../interfaces/competition';
 // const Competition = ({name}:ICompetition) => {
 // const Competition = (props:ICompetition) => {
 // const Competition: React.FC<ICompetition> = ({ children, name }) => {
 
-function Competition({ name, description, country }: ICompetition) {
+function Competition({
+  id,
+  name,
+  description,
+  country,
+}: ICompetition) {
   return (
     <Card sx={{ minWidth: 345 }}>
       <CardContent>
@@ -25,8 +30,8 @@ function Competition({ name, description, country }: ICompetition) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Participantes</Button>
-        <Button size="small">Jogos</Button>
+        <Button size="small" component={Link} to={`/competitions/${id}/teams`}>Participantes</Button>
+        <Button size="small" component={Link} to={`/competitions/${id}/matches`}>Jogos</Button>
       </CardActions>
     </Card>
   );

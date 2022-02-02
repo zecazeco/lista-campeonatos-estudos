@@ -10,8 +10,8 @@ function AppRouter() {
     <Routes>
       <Route path="/" element={<CompetitionsList />} />
       <Route path="/competitions" element={<CompetitionsList />} />
-      <Route path="/matches" element={<MatchesList />} />
-      <Route path="/teams" element={<TeamsList />} />
+      <Route path="/competitions/:id/matches" element={<MatchesList />} />
+      <Route path="/competitions/:id/teams" element={<TeamsList />} />
     </Routes>
   );
 }
