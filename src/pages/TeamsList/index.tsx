@@ -18,7 +18,7 @@ function TeamsList() {
       // console.log('dddd', res.data);
       return res.data;
     }));
-    // console.log('form', formatedTeams);
+    // console.log('formx', formatedTeams);
     setTeams(formatedTeams);
   };
 
