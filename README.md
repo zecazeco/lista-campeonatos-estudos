@@ -6,6 +6,13 @@ Demonstração: [Campeonatos](https://zecazeco.github.io/lista-campeonatos-estud
 backEnd:
 [API de estudos](https://github.com/zecazeco/node-api-estudos)
 
+## To Do
+- Adicionar força de cada time
+- Função para adicionar campeonatos
+- Função para adicionar partidas
+- Função para adicionar times
+- Função para gerar resultados
+
 ## Author
 José Luís Haas
 
