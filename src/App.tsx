@@ -4,7 +4,7 @@ import AppRouter from './routes';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/lista-campeonatos-estudos">
       <AppRouter />
     </BrowserRouter>
   );

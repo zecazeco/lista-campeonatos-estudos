@@ -2,7 +2,7 @@
   "name": "tabela-confrontos",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://zecazeco.github.io/lista-campeonatos-estudos/",
+  "homepage": "https://zecazeco.github.io/lista-campeonatos-estudos",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
